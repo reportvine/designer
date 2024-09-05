@@ -1,4 +1,4 @@
-# OpenReportDesigner
+# Report Vine Designer
 
 Hitachi Vantara, the Pentaho Reporting developers, decided to [change the License](https://github.com/pentaho/pentaho-reporting/commit/77196da78f3c76605536d12944220b5a29d25f6d)
 of Pentaho Reporting from LGPL to BSL - a change that we do not agree with.
@@ -14,3 +14,6 @@ We aim to rename the project and packages while keeping the sources intact and t
 In the mean time nstructions for working with the code are preserved in [README.old.md](README.old.md)
 
 
+---
+
+Report Vine Developers
