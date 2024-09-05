@@ -1,8 +1,8 @@
 # OpenReportDesigner
 
-Hitachi Vintara, the Pentaho Reporting developers, decided to [change the License](https://github.com/pentaho/pentaho-reporting/commit/77196da78f3c76605536d12944220b5a29d25f6d)
+Hitachi Vantara, the Pentaho Reporting developers, decided to [change the License](https://github.com/pentaho/pentaho-reporting/commit/77196da78f3c76605536d12944220b5a29d25f6d)
 of Pentaho Reporting from LGPL to BSL - a change that we do not agree with.
-Unfortunately, Pentaho seems not be heavily patronized in the industry so 
+Unfortunately, Pentaho Reporting seems not be heavily patronized in the industry so 
 this change went about silently.
 
 This is a fork of the last "truly free" Pentaho Report Designer codebase before the license
