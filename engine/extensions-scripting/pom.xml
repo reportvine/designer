@@ -25,6 +25,7 @@
     <dependency>
       <groupId>org.mozilla</groupId>
       <artifactId>rhino</artifactId>
+      <version>${rhino.version}</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -67,6 +68,7 @@
     <dependency>
       <groupId>xerces</groupId>
       <artifactId>xercesImpl</artifactId>
+      <version>${xercesImpl.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>

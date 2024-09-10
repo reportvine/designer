@@ -2,11 +2,11 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>org.pentaho</groupId>
-    <artifactId>pentaho-ce-jar-parent-pom</artifactId>
-    <version>10.3.0.0-SNAPSHOT</version>
-  </parent>
+<!--  <parent>-->
+<!--    <groupId>org.pentaho</groupId>-->
+<!--    <artifactId>pentaho-ce-jar-parent-pom</artifactId>-->
+<!--    <version>10.3.0.0-SNAPSHOT</version>-->
+<!--  </parent>-->
   <groupId>org.pentaho.reporting</groupId>
   <artifactId>pentaho-reporting</artifactId>
   <version>10.3.0.0-SNAPSHOT</version>
@@ -162,6 +162,325 @@
     <commons-compress.version>1.26.1</commons-compress.version>
     <commons-io.version>2.16.1</commons-io.version>
     <log4j.version>2.23.1</log4j.version>
+
+    <rhino.version>1.7.14</rhino.version>
+
+    <plugin.failsafe.version>3.5.0</plugin.failsafe.version>
+    <plugin.enforcer.version>3.5.0</plugin.enforcer.version>
+
+    <!-- Properties from  pentaho-ce-jar-parent-pom  -->
+    <junit.version>4.11</junit.version>
+    <copyright.year>2022</copyright.year>
+
+    <!-- VERSIONS -->
+    <slf4j.version>1.7.12</slf4j.version>
+    <logback.version>1.2.10</logback.version>
+    <log4j.version>2.17.1</log4j.version>
+    <commons-logging.version>1.2</commons-logging.version>
+    <postgresql.version>42.5.1</postgresql.version>
+    <ini4j.version>0.5.4</ini4j.version>
+
+    <osgi.core.version>6.0.0</osgi.core.version>
+    <osgi.compendium.version>5.0.0</osgi.compendium.version>
+
+    <karaf.version>4.2.15</karaf.version>
+
+    <felix.http.api.version>3.0.0</felix.http.api.version>
+    <felix.http.proxy.version>3.0.6</felix.http.proxy.version>
+    <felix.http.bridge.version>4.0.6</felix.http.bridge.version>
+
+    <aries.blueprint.api.version>1.0.1</aries.blueprint.api.version>
+    <aries.blueprint.core.version>1.10.2</aries.blueprint.core.version>
+
+    <pax-web.version>7.2.10</pax-web.version>
+    <pax-url-aether.version>2.6.7</pax-url-aether.version>
+
+    <cxf.version>3.3.1</cxf.version>
+
+    <activemq.version>5.15.11</activemq.version>
+
+    <derby.version>10.14.2.0</derby.version>
+
+    <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
+    <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
+    <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
+    <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
+    <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
+    <maven-site-plugin.version>3.7.1</maven-site-plugin.version>
+    <maven-dependency-plugin.version>3.1.0</maven-dependency-plugin.version>
+    <build-helper-maven-plugin.version>3.1.0-pentaho</build-helper-maven-plugin.version>
+    <requirejs-maven-plugin.version>2.0.4</requirejs-maven-plugin.version>
+    <frontend-maven-plugin.version>1.6</frontend-maven-plugin.version>
+    <maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
+    <iterator-maven-plugin.version>0.5.1</iterator-maven-plugin.version>
+    <maven-assembly-plugin.version>3.1.1</maven-assembly-plugin.version>
+    <maven-checkstyle-plugin.version>2.17</maven-checkstyle-plugin.version>
+    <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
+    <maven-failsafe-plugin.version>2.21.0</maven-failsafe-plugin.version>
+    <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
+    <maven-javadoc-plugin.version>3.0.0</maven-javadoc-plugin.version>
+    <maven-jxr-plugin.version>2.5</maven-jxr-plugin.version>
+    <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
+    <maven-resources-plugin.version>3.0.2</maven-resources-plugin.version>
+    <maven-remote-resources-plugin.version>1.6.0</maven-remote-resources-plugin.version>
+    <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
+    <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+    <maven-surefire-report-plugin.version>2.21.0</maven-surefire-report-plugin.version>
+    <maven-verifier-plugin.version>1.1</maven-verifier-plugin.version>
+    <sonar-maven-plugin.version>3.5.0.1254</sonar-maven-plugin.version>
+    <license-helper-maven-plugin.version>1.27</license-helper-maven-plugin.version>
+    <maven-war-plugin.version>3.2.0</maven-war-plugin.version>
+    <maven-bundle-plugin.version>2.5.3</maven-bundle-plugin.version>
+    <os-maven-plugin.version>1.6.2</os-maven-plugin.version>
+
+    <karaf-maven-plugin.version>4.2.15</karaf-maven-plugin.version>
+    <hitachi-karaf-maven-plugin.version>4.2.15</hitachi-karaf-maven-plugin.version>
+    <karaf-maven-plugin.enableGeneration>true</karaf-maven-plugin.enableGeneration>
+    <karaf-maven-plugin.aggregateFeatures>false</karaf-maven-plugin.aggregateFeatures>
+    <karaf-maven-plugin.includeTransitiveDependency>true</karaf-maven-plugin.includeTransitiveDependency>
+    <karaf-maven-plugin.addBundlesToPrimaryFeature>true</karaf-maven-plugin.addBundlesToPrimaryFeature>
+    <karaf-maven-plugin.archiveTarGz>false</karaf-maven-plugin.archiveTarGz>
+    <karaf-maven-plugin.archiveZip>true</karaf-maven-plugin.archiveZip>
+    <karaf-maven-plugin.markTransitiveAsDependency>true</karaf-maven-plugin.markTransitiveAsDependency>
+    <karaf-maven-plugin.primaryFeatureName>${project.artifactId}</karaf-maven-plugin.primaryFeatureName>
+    <karaf-maven-plugin.prerequisiteFeatures />
+
+    <nodejs.version>v10.0.0</nodejs.version>
+    <npm.version>5.7.1</npm.version>
+    <requirejs.version>2.3.6</requirejs.version>
+    <bootstrap.version>3.4.1</bootstrap.version>
+
+    <!-- When changing the jQuery version, be sure to rename/adapt the corresponding AMD "overrides" file:
+         pentaho-osgi-bundles/pentaho-webjars-deployer/src/main/resources/overrides/org.webjars.npm/jquery/3.5.1/overrides.json
+     -->
+    <jquery.version>3.5.1</jquery.version>
+    <jquery-ui.version>1.13.1</jquery-ui.version>
+
+    <!-- When changing the Angular version, be sure to rename/adapt the corresponding AMD "overrides" files:
+         pentaho-osgi-bundles/pentaho-webjars-deployer/src/main/resources/overrides/org.webjars.bower/angular/1.8.0/overrides.json
+     -->
+    <angular.version>1.8.0</angular.version>
+    <underscore.version>1.13.1</underscore.version>
+    <angular-translate.version>2.18.1</angular-translate.version>
+    <angular-ui-bootstrap-bower.version>1.3.3</angular-ui-bootstrap-bower.version>
+    <uirouter-core.version>5.0.23</uirouter-core.version>
+    <uirouter-angularjs.version>1.0.22</uirouter-angularjs.version>
+
+    <fancyapps__fancybox.version>3.5.5</fancyapps__fancybox.version>
+
+    <codehaus-jackson.version>1.9.13</codehaus-jackson.version>
+    <fasterxml-jackson.version>2.9.10</fasterxml-jackson.version>
+    <fasterxml-jackson-databind.version>2.9.10.2</fasterxml-jackson-databind.version>
+    <dom4j.version>2.1.1</dom4j.version>
+    <jaxen.version>1.1.6</jaxen.version>
+    <xstream.version>1.4.20</xstream.version>
+    <jackrabbit.version>2.16.5</jackrabbit.version>
+    <commons-compress.version>1.20</commons-compress.version>
+    <commons-fileupload.version>1.4</commons-fileupload.version>
+    <commons-vfs2.version>2.7.0</commons-vfs2.version>
+    <commons-codec.version>1.15</commons-codec.version>
+    <commons-text.version>1.10.0</commons-text.version>
+    <aws-java-sdk.version>1.11.516</aws-java-sdk.version>
+    <jetty.version>9.4.18.v20190429</jetty.version>
+    <httpclient.version>4.5.9</httpclient.version>
+    <httpcore.version>4.4.11</httpcore.version>
+    <kafka-clients.version>0.10.2.2</kafka-clients.version>
+    <paho.version>1.2.2</paho.version>
+    <tomcat.version>9.0.74</tomcat.version>
+    <h2.version>2.1.210</h2.version>
+    <!-- jdk14 and jdk15on versions not to be used; supports older third-party pom files in build -->
+    <bcprov-jdk14.version>1.72</bcprov-jdk14.version>
+    <bcprov-jdk15on.version>1.65</bcprov-jdk15on.version>
+    <bcprov-jdk15to18.version>1.72</bcprov-jdk15to18.version>
+    <simple-jndi.version>1.0.10</simple-jndi.version>
+    <batik.version>1.16</batik.version>
+
+    <!-- spring version -->
+    <spring.version>5.3.27</spring.version>
+    <spring-ldap.version>2.3.2.RELEASE</spring-ldap.version>
+    <spring-binding.version>2.4.8.RELEASE</spring-binding.version>
+    <spring-se-jcr.version>0.9</spring-se-jcr.version>
+    <spring-mock.version>2.0.8</spring-mock.version>
+    <spring-osgi.version>1.2.1</spring-osgi.version>
+    <spring-security.version>5.8.4</spring-security.version>
+    <spring-security-core-tests.version>2.0.5.RELEASE</spring-security-core-tests.version>
+    <spring-retry.version>1.2.2.RELEASE</spring-retry.version>
+    <spring-boot.version>2.4.2</spring-boot.version>
+    <spring-security-kerberos.version>1.0.1.RELEASE</spring-security-kerberos.version>
+    <karaf-springframework-override.version>4.1.9.RELEASE_1</karaf-springframework-override.version>
+
+    <xercesImpl.version>2.12.0</xercesImpl.version>
+    <xml-apis.version>1.4.01</xml-apis.version>
+
+    <enunciate-jersey-rt.version>1.27</enunciate-jersey-rt.version>
+    <beanshell.version>2.1.1</beanshell.version>
+
+    <!-- jdk version -->
+    <!-- build for Java 8 compatibility for 9.3; to be updated to Java 11 in the next release -->
+    <source.jdk.version>1.8</source.jdk.version>
+    <target.jdk.version>1.8</target.jdk.version>
+    <release.jdk.version>8</release.jdk.version>
+    <maven.compiler.release>8</maven.compiler.release>
+    <compilerArgument />
+    <checkstyle.version>8.0</checkstyle.version>
+    <coding-standards.version>9.5.2.0-273</coding-standards.version>
+    <spotbugs.version>3.1.3</spotbugs.version>
+    <appscan-maven-plugin.version>1.0.7</appscan-maven-plugin.version>
+    <dependency-check-maven.version>5.2.2</dependency-check-maven.version>
+
+    <!-- Endorsed Standards Excluded from Java 11+ -->
+    <jakarta.activation.version>1.2.2</jakarta.activation.version>
+    <jakarta.xml.bind-api.version>2.3.3</jakarta.xml.bind-api.version>
+    <jaxb-impl.version>2.3.3</jaxb-impl.version>
+    <jakarta.xml.ws-api.version>2.3.3</jakarta.xml.ws-api.version>
+
+    <!-- GWT Java 11 compatibility -->
+    <gwt.version>2.9.0</gwt.version>
+    <gwt-incubator.version>2.1.0</gwt-incubator.version>
+    <gwt-dnd.version>3.3.4</gwt-dnd.version>
+    <gwtmockito.version>1.1.9</gwtmockito.version>
+    <gwtx.version>1.5.4-java11</gwtx.version>
+    <GWT-FX.version>0.5.0</GWT-FX.version>
+    <jsinterop-annotations.version>2.0.0</jsinterop-annotations.version>
+
+    <!-- Monitoring versions -->
+    <!-- Guava Event Bus version must be the same throughout all components of Monitoring otherwise service references
+         won't be properly satisfied.
+         The version must be no higher than 17.0 because newer versions include final methods which prevents the class
+         from being proxied in OSGi blueprint services. -->
+    <guava.monitoring.version>17.0</guava.monitoring.version>
+    <camel.version>2.17.7</camel.version>
+
+    <!-- PHASE BINDINGS -->
+    <set-highest-basedir-phase>initialize</set-highest-basedir-phase>
+    <node-npm_install-phase>initialize</node-npm_install-phase>
+    <eula-wrap_assign-deps-to-properties-phase>initialize</eula-wrap_assign-deps-to-properties-phase>
+    <javascript_unpack-rjs-phase>initialize</javascript_unpack-rjs-phase>
+    <javascript_unpack-dependencies-phase>initialize</javascript_unpack-dependencies-phase>
+    <javascript_transpile_custom_properties-phase>validate</javascript_transpile_custom_properties-phase>
+    <javascript_override-profilebuilder-phase>process-resources</javascript_override-profilebuilder-phase>
+    <bundle-javascript_optimize-phase>generate-sources</bundle-javascript_optimize-phase>
+    <bundle-javascript_transpile_optimize-phase>generate-sources</bundle-javascript_transpile_optimize-phase>
+    <bundle-javascript_add-resource-phase>process-sources</bundle-javascript_add-resource-phase>
+    <bundle-sass_optimize-phase>process-sources</bundle-sass_optimize-phase>
+    <bundle-javascript_unpack-rjs-phase>initialize</bundle-javascript_unpack-rjs-phase>
+    <generate-bundle-manifest-phase>compile</generate-bundle-manifest-phase>
+    <javascript-transpile_cleanup-phase>compile</javascript-transpile_cleanup-phase>
+    <javascript-test_copy-resources-phase>generate-test-resources</javascript-test_copy-resources-phase>
+    <javascript-test_npm-install-phase>generate-test-resources</javascript-test_npm-install-phase>
+    <test-unit-execute-phase>test</test-unit-execute-phase>
+    <javascript-test_karma-phase>test</javascript-test_karma-phase>
+    <javascript-requirecfg_aggregate-phase>prepare-package</javascript-requirecfg_aggregate-phase>
+    <javascript_optimize-phase>prepare-package</javascript_optimize-phase>
+    <assembly_package-phase>package</assembly_package-phase>
+    <assembly_appendId>false</assembly_appendId>
+    <javascript-assembly_package-phase>package</javascript-assembly_package-phase>
+    <test-integration_add-resources-phase>pre-integration-test</test-integration_add-resources-phase>
+    <test-integration_add-source-phase>pre-integration-test</test-integration_add-source-phase>
+    <test-integration_compile-phase>pre-integration-test</test-integration_compile-phase>
+    <test-integration_execute-phase>integration-test</test-integration_execute-phase>
+    <eula-wrap_create-izpack-installer-jar-phase>verify</eula-wrap_create-izpack-installer-jar-phase>
+    <eula-wrap_create-dist-phase>verify</eula-wrap_create-dist-phase>
+    <eula-wrap_attach-dist-phase>verify</eula-wrap_attach-dist-phase>
+    <attach-sources-phase>verify</attach-sources-phase>
+    <test-integration_report-phase>verify</test-integration_report-phase>
+    <javascript-doc_copy-resources-phase>pre-site</javascript-doc_copy-resources-phase>
+
+    <!-- Node and npm root repositoryies -->
+    <nodeDownloadRoot>https://repo.orl.eng.hitachivantara.com/artifactory/nodejs-dist/</nodeDownloadRoot>
+    <npmDownloadRoot>https://repo.orl.eng.hitachivantara.com/artifactory/npm-release/npm/-/</npmDownloadRoot>
+
+    <pentaho.resolve.repo>https://repo.orl.eng.hitachivantara.com/artifactory/pnt-mvn</pentaho.resolve.repo>
+    <!-- No default repository URL deployments, these must be defined at build-time -->
+    <pentaho.public.release.repo />
+    <pentaho.public.snapshot.repo />
+
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+    <build.javascriptSourceDirectory>${basedir}/src/main/javascript</build.javascriptSourceDirectory>
+    <build.javascriptOutputDirectory>${project.build.directory}/javascriptOutput</build.javascriptOutputDirectory>
+    <build.transpiledJavascriptOutputDirectory>${project.build.directory}/transpiledJavascriptOutput</build.transpiledJavascriptOutputDirectory>
+    <build.javascriptConfigDirectory>${basedir}/src/main/config/javascript</build.javascriptConfigDirectory>
+
+    <build.javascriptTestSourceDirectory>${basedir}/src/test/javascript</build.javascriptTestSourceDirectory>
+    <build.javascriptTestOutputDirectory>${project.build.directory}/test-javascript</build.javascriptTestOutputDirectory>
+    <build.javascriptTestConfigDirectory>${basedir}/src/test/config/javascript</build.javascriptTestConfigDirectory>
+
+    <jenkins.javascript-test_karma.reportsDirectory>${basedir}/target/js-reports</jenkins.javascript-test_karma.reportsDirectory>
+
+    <build.dependenciesDirectory>${project.build.directory}/dependency</build.dependenciesDirectory>
+
+    <pentaho-js-build.dir>${build.dependenciesDirectory}/pentaho-js-build</pentaho-js-build.dir>
+    <rjs.webjar.file>${build.dependenciesDirectory}/META-INF/resources/webjars/requirejs/${requirejs.version}/bin/r.js</rjs.webjar.file>
+
+    <requirejs.build.file>build.js</requirejs.build.file>
+    <js.project.list>dummy</js.project.list>
+
+    <!-- Set to true if javascript sources need to be transpiled (e.g.: if it uses es6) -->
+    <js.transpile.project>false</js.transpile.project>
+
+    <!-- Set to true if using sass for styling.project needs to be transpiled (e.g.: if it uses es6) -->
+    <css.sass.project>false</css.sass.project>
+
+    <docjs.config.file />
+
+    <frontend-maven-plugin.workingDirectory>${project.build.sourceDirectory}/..</frontend-maven-plugin.workingDirectory>
+    <frontend-maven-plugin.installDirectory>${frontend-maven-plugin.workingDirectory}/target</frontend-maven-plugin.installDirectory>
+
+    <!-- License Configuration -->
+    <license.organizationName>Hitachi Vantara</license.organizationName>
+    <license.inceptionYear>2002</license.inceptionYear>
+    <license.licenseFile>LICENSE.txt</license.licenseFile>
+    <license.bundleLicenseFile>META-INF/LICENSE.txt</license.bundleLicenseFile>
+    <license.failOnLicenseCheck>false</license.failOnLicenseCheck>
+
+    <!-- Chechstyle configuration -->
+    <!--  configuration file comes from coding-standards artifact -->
+    <checkstyle.configLocation>checkstyle/pentaho_checks.xml</checkstyle.configLocation>
+    <checkstyle.consoleOutput>true</checkstyle.consoleOutput>
+    <checkstyle.linkXRef>true</checkstyle.linkXRef>
+    <pentaho-eula-wrap-config.version>9.5.2.0-273</pentaho-eula-wrap-config.version>
+
+<!--    &lt;!&ndash; Documentation properties &ndash;&gt;-->
+<!--    &lt;!&ndash; parsedVersion.* properties are dynamically created by the build-helper-maven-plugin:set-doc-version-property &ndash;&gt;-->
+<!--    <doc.version>${parsedVersion.majorVersion}.${parsedVersion.minorVersion}</doc.version>-->
+<!--    <doc.base.url>https://help.hitachivantara.com/Documentation/Pentaho/${doc.version}</doc.base.url>-->
+<!--    <doc.base.wiki.url>https://pentaho-community.atlassian.net/wiki</doc.base.wiki.url>-->
+
+    <!-- SonarQube general configuration -->
+    <sonar.dependencyCheck.reportPath>${project.build.directory}/dependency-check-report.xml</sonar.dependencyCheck.reportPath>
+    <sonar.dependencyCheck.htmlReportPath>${project.build.directory}/dependency-check-report.html</sonar.dependencyCheck.htmlReportPath>
+
+    <!-- region Protobuf / gRPC configuration-->
+    <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
+    <protoc.version>3.11.4</protoc.version>
+    <grpc.version>1.27.0</grpc.version>
+    <!-- endregion -->
+
+    <hv-security-web.version>0.7.0</hv-security-web.version>
+    <snowflake-jdbc.version>3.13.30</snowflake-jdbc.version>
+    <commons-io.version>2.11.0</commons-io.version>
+    <rome.version>1.18.0</rome.version>
+    <snakeyaml.version>1.33</snakeyaml.version>
+
+    <!-- http://maven.apache.org/surefire/maven-surefire-plugin/examples/fork-options-and-parallel-execution.html -->
+    <maven.test.failure.ignore>false</maven.test.failure.ignore>
+    <maven-surefire-plugin.reuseForks>true</maven-surefire-plugin.reuseForks>   <!-- default setting is reuseForks = true -->
+    <maven-surefire-plugin.forkCount>1</maven-surefire-plugin.forkCount>        <!-- default setting is forkCount = 1 -->
+    <maven-surefire-plugin.testFailureIgnore>${maven.test.failure.ignore}</maven-surefire-plugin.testFailureIgnore>
+    <maven-surefire-plugin.argLine/>
+    <maven-surefire-plugin.ci.argLine/>
+    <maven-failsafe-plugin.reuseForks>true</maven-failsafe-plugin.reuseForks>   <!-- default setting is reuseForks = true -->
+    <maven-failsafe-plugin.forkCount>1</maven-failsafe-plugin.forkCount>        <!-- default setting is forkCount = 1 -->
+    <maven-failsafe-plugin.testFailureIgnore>${maven.test.failure.ignore}</maven-failsafe-plugin.testFailureIgnore>
+    <maven-failsafe-plugin.argLine/>
+    <maven-failsafe-plugin.ci.argLine/>
+
+    <SCM_BRANCH>master</SCM_BRANCH>
+
+    <jacocoSurefireArgLine/> <!-- this is set by jacoco's prepare-agent execution -->
+    <jacocoFailsafeArgLine/> <!-- this is set by jacoco's prepare-agent execution -->
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -2195,17 +2514,6 @@
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
-        <version>${mockito-core.version}</version>
-        <exclusions>
-          <exclusion>
-            <artifactId>*</artifactId>
-            <groupId>*</groupId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-core</artifactId>
         <version>${mockito.version}</version>
         <exclusions>
           <exclusion>
@@ -2428,6 +2736,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
+        <version>${maven-surefire-plugin.version}</version>
         <configuration>
           <systemPropertyVariables>
             <user.language>en</user.language>
@@ -2443,6 +2752,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-failsafe-plugin</artifactId>
+        <version>${plugin.failsafe.version}</version>
         <configuration>
           <systemPropertyVariables>
             <user.language>en</user.language>
@@ -2564,6 +2874,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-clean-plugin</artifactId>
+            <version>3.2.0</version>
             <executions>
               <execution>
                 <!-- override clean and don't delete the zips in target, this helps hadoop-addon and makes the pipeline cleaner
@@ -2591,13 +2902,11 @@
     </profile>
 
   </profiles>
-
-
   <repositories>
     <repository>
       <id>pentaho-public</id>
       <name>Pentaho Public</name>
-      <url>https://repo.orl.eng.hitachivantara.com/artifactory/pnt-mvn/</url>
+      <url>https://hitachiedge1.jfrog.io/ui/native/pnt-mvn/</url>
       <releases>
         <enabled>true</enabled>
         <updatePolicy>daily</updatePolicy>
@@ -2613,7 +2922,7 @@
     <pluginRepository>
       <id>pentaho-public-plugins</id>
       <name>Pentaho Public Plugins</name>
-      <url>https://repo.orl.eng.hitachivantara.com/artifactory/pnt-mvn/</url>
+      <url>https://hitachiedge1.jfrog.io/ui/native/pnt-mvn/</url>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
@@ -2622,6 +2931,5 @@
       </releases>
     </pluginRepository>
   </pluginRepositories>
-
 
 </project>

@@ -25,6 +25,7 @@
     <dependency>
       <groupId>org.mozilla</groupId>
       <artifactId>rhino</artifactId>
+      <version>${rhino.version}</version>
     </dependency>
     <dependency>
       <groupId>xalan</groupId>

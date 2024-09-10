@@ -32,6 +32,7 @@
     <dependency>
       <groupId>jaxen</groupId>
       <artifactId>jaxen</artifactId>
+      <version>${jaxen.version}</version>
     </dependency>
     <dependency>
       <groupId>jcifs</groupId>
@@ -90,10 +91,12 @@
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
+      <version>${httpclient.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpcore</artifactId>
+      <version>${httpcore.version}</version>
     </dependency>
     <dependency>
       <groupId>net.bytebuddy</groupId>

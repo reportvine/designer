@@ -32,10 +32,12 @@
     <dependency>
       <groupId>jaxen</groupId>
       <artifactId>jaxen</artifactId>
+      <version>${jaxen.version}</version>
     </dependency>
     <dependency>
       <groupId>org.dom4j</groupId>
       <artifactId>dom4j</artifactId>
+      <version>${dom4j.version}</version>
       <scope>compile</scope>
     </dependency>
     <dependency>

@@ -83,6 +83,7 @@
     <dependency>
       <groupId>xerces</groupId>
       <artifactId>xercesImpl</artifactId>
+      <version>${xercesImpl.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -110,6 +111,7 @@
     <dependency>
       <groupId>com.sun.activation</groupId>
       <artifactId>jakarta.activation</artifactId>
+      <version>${jakarta.activation.version}</version>
     </dependency>
     <dependency>
       <groupId>net.bytebuddy</groupId>
